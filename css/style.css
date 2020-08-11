@@ -164,7 +164,7 @@
   background-color: #6069b0;
   color: white;
   border-radius: 10px;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .preview-site {
@@ -173,16 +173,6 @@
 
 
 @media (min-width: 768px) {
-
-  /* Skills and Education */
-
-  /* .my-card-area{
-    display: grid;
-    padding-left: 5%;
-    padding-right: 5%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, auto);
-  } */
 
 
   /* Project cards */
