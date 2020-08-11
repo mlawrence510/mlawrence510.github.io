@@ -22,12 +22,13 @@
 }
 
 .openbtn {
-  font-size: 35px;
+  font-size: 60px;
+  padding: 5px;
+  margin-bottom: 10px;
   cursor: pointer;
-  background-color: #6069b0;
-  color: white;
-  padding: 10px 15px;
+  color: #6069b0;
   border: none;
+  background: none;
 }
 
 /* intro styling */
