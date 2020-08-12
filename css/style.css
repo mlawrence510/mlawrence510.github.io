@@ -265,8 +265,9 @@
 }
 
 .contact-me h2 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 .contact-me a {
@@ -352,6 +353,10 @@
 
   .nav-lg ul {
     display: flex;
+  }
+
+  .contact-me h2 {
+    font-size: 50px;
   }
 }
 
