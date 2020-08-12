@@ -43,7 +43,7 @@
   text-decoration: none;
   margin-left: 20px;
   color: #6069b0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .nav-lg a:hover {
@@ -63,7 +63,9 @@
   margin: 20px;
 }
 
-.intro h3 {
+.intro p {
+  font-size: 24px;
+  font-weight: 400;
   margin: 20px;
 }
 
