@@ -18,6 +18,7 @@
   padding-left: 10px;
 }
 
+
 .openbtn {
   font-size: 50px;
   padding: 5px;
@@ -104,7 +105,8 @@
 }
 
 .intro h1 {
-  margin: 20px;
+  margin: 30px 0 20px;
+  font-size: 40px;
 }
 
 .intro p {
@@ -243,7 +245,7 @@
   padding: 0;
   margin: 0;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   color: white;
 }
@@ -256,8 +258,15 @@
   margin: 100px 0;
 }
 
+.contact-logo {
+  width: 200px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
 .contact-me h2 {
-  margin-bottom: 25px;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .contact-me a {
@@ -265,7 +274,66 @@
   font-size: 25px;
   font-weight: 600;
   color: #6069b0;
-  padding: 10px;
+  padding: 20px;
+  border: 5px #6069b0 solid;
+  border-radius: 15px;
+  display: inline-block;
+  transition: background-color .5s;
+}
+
+.contact-me a:hover {
+  transition: background-color .5s;
+  background-color: #6069b0;
+  color: white;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #6069b0;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.icon-area {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 15px;
+}
+
+.gitpath {
+  fill: #FFFFFF;
+}
+
+.st0 {
+  fill: #FFFFFF;
+}
+
+.icon:hover {
+  animation-name: rotate-icon;
+  animation-duration: 1s;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.copyright {
+  color: white;
 }
 
 @media (min-width: 768px) {
