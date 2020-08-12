@@ -33,6 +33,24 @@
   outline: none;
 }
 
+.nav-lg ul{
+  list-style: none;
+  display: none;
+  margin-right: 20px;
+}
+
+.nav-lg a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #6069b0;
+  font-weight: 600;
+}
+
+.nav-lg a:hover {
+  border-bottom: 3px solid #6069b0;
+  padding-bottom: 2px;
+}
+
 /* intro styling */
 
 .intro {
@@ -43,7 +61,6 @@
 
 .intro h1 {
   margin: 20px;
-  color: white;
 }
 
 .intro h3 {
@@ -117,9 +134,14 @@
 }
 
 
-/* Project Cards */
+/* Recent Cards */
 
-.project-area {
+.recent {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.work-area {
   display: grid;
 }
 
@@ -159,16 +181,28 @@
   margin-bottom: 20px;
 }
 
-.project-type p {
-  padding: 2px 10px;
-  background-color: #6069b0;
-  color: white;
-  border-radius: 10px;
-  margin-left: 5px;
-}
-
 .preview-site {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.preview-site span {
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: #6069b0;
+  color: white;
+  width: 45%;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.preview-site p {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 
@@ -177,13 +211,23 @@
 
   /* Project cards */
 
-  .project-area {
+  .work-area {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill, auto);
   }
+
+  .openbtn {
+    display: none;
+  }
+
+  .nav-lg ul{
+    display: flex;
+  }
+
 }
+
 
 
 @media (min-width: 1024px) {
@@ -196,5 +240,14 @@
     padding-right: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill, auto);
+  }
+
+}
+
+@media (min-width: 1600px) {
+  /* Project cards */
+
+  .work-area {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
