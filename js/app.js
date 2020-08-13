@@ -2,6 +2,7 @@ const sidebar = document.querySelector("#mySidebar");
 const body = document.querySelector("body");
 const overlay = document.querySelector('.overlay');
 const openBtn = document.querySelector('.openbtn');
+const filterArea = document.querySelector('.display-port');
 
 
 function openNav() {
@@ -25,8 +26,45 @@ openBtn.addEventListener('click', openNav);
 
 overlay.addEventListener('click', closeNav);
 
-sidebar.addEventListener('click', event =>{
-const target = event.target;
+sidebar.addEventListener('click', event => {
+  const target = event.target;
   if (target.tagName === 'A')
     closeNav();
+});
+
+// Filter Portfolio
+
+filterArea.addEventListener('click', event => {
+  const target = event.target;
+  const removeActive = document.querySelector('.filter').children;
+  if (target.className !== 'active') {
+    for (i = 0; i < removeActive.length; i++) {
+      removeActive[i].className = '';
+    }
+    target.className = 'active';
+  }
+
+  if (target.tagName === 'LI') {
+    const searchType = target.getAttribute('id');
+    const card = document.querySelectorAll('.project-card');
+
+    if (searchType === 'all') {
+      for (i = 0; i < card.length; i++) {
+        card[i].style.display = '';
+      }
+    } else {
+      for (i = 0; i < card.length; i++) {
+
+        const compare = document.querySelectorAll('.project-card')[i].className;
+        const indexSearch = compare.indexOf(searchType);
+
+        if (indexSearch > -1) {
+          card[i].style.display = '';
+        } else {
+          card[i].style.display = 'none';
+        }
+
+      }
+    }
+  }
 });
