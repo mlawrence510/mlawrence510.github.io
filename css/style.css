@@ -112,7 +112,11 @@
 .intro p {
   font-size: 24px;
   font-weight: 400;
-  margin: 20px;
+  margin: 20px auto;
+  color: #474747;
+  line-height: 130%;
+  width: 80%;
+  display: block;
 }
 
 .avatar {
@@ -142,6 +146,11 @@
   height: 420px;
   margin-top: -50px;
   border-radius: 5px;
+
+}
+
+.my-card-text li {
+  color: #474747;
 }
 
 .skills-title,
@@ -248,10 +257,13 @@
 .project-text-area p {
   padding-bottom: 20px;
   margin: 5px 0;
+  height: 120px;
+  line-height: 130%;
+  color: #474747;
 }
 
 .preview-site {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -371,6 +383,14 @@
     grid-template-rows: repeat(auto-fill, auto);
   }
 
+  .intro p {
+    width: 50%;
+  }
+
+  .project-text-area p {
+    font-size: 15px;
+  }
+
   .openbtn {
     display: none;
   }
@@ -393,6 +413,11 @@
     padding-right: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill, auto);
+  }
+
+  .project-text-area p {
+    height: 100px;
+    line-height: 150%;
   }
 }
 

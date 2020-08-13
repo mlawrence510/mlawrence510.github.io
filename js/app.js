@@ -35,12 +35,14 @@ sidebar.addEventListener('click', event => {
 // Filter Portfolio
 
 function activate(target) {
-  const removeActive = document.querySelector('.filter').children;
-  if (target.className !== 'active') {
-    for (i = 0; i < removeActive.length; i++) {
-      removeActive[i].className = '';
+  if (target.tagName === 'LI') {
+    const removeActive = document.querySelector('.filter').children;
+    if (target.className !== 'active') {
+      for (i = 0; i < removeActive.length; i++) {
+        removeActive[i].className = '';
+      }
+      target.className = 'active';
     }
-    target.className = 'active';
   }
 };
 
