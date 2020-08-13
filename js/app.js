@@ -44,7 +44,7 @@ function activate(target) {
       target.className = 'active';
     }
   }
-};
+}
 
 function filter(target) {
   if (target.tagName === 'LI') {
@@ -70,7 +70,7 @@ function filter(target) {
       }
     }
   }
-};
+}
 
 
 
