@@ -19,7 +19,6 @@
   padding-left: 10px;
 }
 
-
 .openbtn {
   font-size: 50px;
   padding: 5px;
@@ -193,6 +192,7 @@
   justify-content: center;
   width: 90%;
   margin: 40px auto 0;
+  flex-wrap: wrap;
 }
 
 .active {
@@ -202,6 +202,7 @@
 
 .filter li {
   margin-left: 10px;
+  margin-top: 5px;
   font-weight: 500;
   font-size: 14px;
   padding: 5px 10px;
@@ -209,8 +210,6 @@
   border-radius: 24px;
   transition: background-color .5s;
 }
-
-
 
 .filter li:hover {
   transition: background-color .5s;
@@ -276,9 +275,7 @@
   color: white;
 }
 
-
 /* Contact Section */
-
 .contact-me {
   text-align: center;
   margin: 100px 0 75px;
@@ -315,7 +312,6 @@
 }
 
 /* Footer */
-
 .footer {
   background-color: #6069b0;
   color: white;
@@ -348,15 +344,17 @@
 }
 
 @keyframes rotate-icon {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(15deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .copyright {

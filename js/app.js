@@ -34,8 +34,7 @@ sidebar.addEventListener('click', event => {
 
 // Filter Portfolio
 
-filterArea.addEventListener('click', event => {
-  const target = event.target;
+function activate(target) {
   const removeActive = document.querySelector('.filter').children;
   if (target.className !== 'active') {
     for (i = 0; i < removeActive.length; i++) {
@@ -43,7 +42,9 @@ filterArea.addEventListener('click', event => {
     }
     target.className = 'active';
   }
+};
 
+function filter(target) {
   if (target.tagName === 'LI') {
     const searchType = target.getAttribute('id');
     const card = document.querySelectorAll('.project-card');
@@ -67,4 +68,14 @@ filterArea.addEventListener('click', event => {
       }
     }
   }
+};
+
+
+
+
+filterArea.addEventListener('click', event => {
+  const target = event.target;
+
+  activate(target);
+  filter(target);
 });
